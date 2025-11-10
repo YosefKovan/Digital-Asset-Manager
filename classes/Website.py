@@ -15,5 +15,5 @@ class Website(DigitalAsset, Reportable):
         return "WEBSITE"
 
     def to_report_line(self):
-        return f"{self.asset_type()}, {self.name}, {self.registration_date}..."
+        return f"{self.asset_type()}, {self.__monthly_traffic}, {self.__monetization_rate}, {self.name}, {self.registration_date}, {self.cost}"
 

@@ -15,4 +15,5 @@ class MobileApp(DigitalAsset, Reportable):
         return "MOBILE_APP"
 
     def to_report_line(self):
-        return f"{self.asset_type()}, {self.name}, {self.registration_date}..."
+        return f"{self.asset_type()}, {self.__avg_rating}, {self.__downloads}, {self.name}, {self.registration_date}, {self.cost}"
+
