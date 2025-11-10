@@ -17,6 +17,8 @@ class AssetPortfolio:
     def calculate_total_net_worth(self):
         total_cost = 0
         for prop in self.__assets:
+            print(type(prop.calculate_value()))
+            print(type(prop.cost))
             total_cost += prop.calculate_value() - prop.cost
 
         return str(round(total_cost, 2))
